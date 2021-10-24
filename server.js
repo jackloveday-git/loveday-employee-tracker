@@ -1,21 +1,24 @@
 // server.js by Jack Loveday
 
 // Import dependencies
-const mysql = require("mysql");
+const mysql = require("mysql2");
 const inquirer = require("inquirer");
 require("console.table");
+require("dotenv").config();
+
+const secure = process.env;
+
 
 // Setup SQL Connection
 const connection = mysql.createConnection({
-  host: 'localhost',
-  port: 3001,
-  user: 'root',
-  //password: '',
-  //database: 'employeesDB'
+  host: secure.DB_HOST,
+  user: secure.DB_USER,
+  password: secure.DB_PASS,
+  database: "employees_DB"
 });
 
 // Run Connection then run our app
-connection.connect(function (err) {
+connection.connect((err) => {
   if (err) throw err;
   console.log(`
     ╔═══╗─────╔╗──────────────╔═╗╔═╗
