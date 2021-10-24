@@ -1,0 +1,26 @@
+{
+  "name": "loveday-employee-tracker",
+  "version": "1.0.0",
+  "description": "SQL database app used to track employees including their roles, and departments.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jackloveday-git/loveday-employee-tracker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jackloveday-git/loveday-employee-tracker/issues"
+  },
+  "homepage": "https://github.com/jackloveday-git/loveday-employee-tracker#readme",
+  "dependencies": {
+    "console.table": "^0.10.0",
+    "inquirer": "^8.2.0",
+    "mysql": "^2.18.1"
+  }
+}

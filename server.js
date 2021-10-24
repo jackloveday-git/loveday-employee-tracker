@@ -8,7 +8,7 @@ require("console.table");
 // Setup SQL Connection
 const connection = mysql.createConnection({
   host: 'localhost',
-  port: 3306,
+  port: 3001,
   user: 'root',
   //password: '',
   //database: 'employeesDB'
